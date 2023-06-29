@@ -11,7 +11,7 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { Link } from "react-router-dom";
 
 
-function Home() {
+function Footer() {
     const [value, setValue] = useState(0);
 
     return (
@@ -70,4 +70,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Footer;

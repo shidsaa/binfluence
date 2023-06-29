@@ -13,7 +13,16 @@ import { Grid } from "@mui/material";
 
 function Header() {
     return (
-        <Grid xs={12} >
+        <Grid
+            xs={12}
+            position="relative"
+            sx={{
+            top: 0,
+            left: 0,
+            right: 0,
+            pb:5
+            }}
+        >
             <AppBar>
                 <Toolbar
                     position="static"
@@ -21,7 +30,6 @@ function Header() {
                         gap: 3,
                         justifyContent: "center",
                         alignItems: "center",
-                        
                     }}
                 >
                     <IconButton sx={{color:"white"}} >

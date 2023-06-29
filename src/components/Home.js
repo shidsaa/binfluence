@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import Footer from "./Footer";
+import Header from "./Header";
 
 
 function Home() {
@@ -14,42 +15,43 @@ function Home() {
             position:"absolute",
         })}
         >
-        <Grid
-            xs={12}
-            container 
-            sx={(t) => ({
-            backgroundColor: t.palette.primary.main,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            py: 6,
-            px: 4,
-            // position:"absolute",
-        })}>
+            <Header />
             <Grid
-                item
                 xs={12}
+                container 
                 sx={(t) => ({
-                backgroundColor: t.palette.primary.light,
-                borderRadius: "13px",
+                backgroundColor: t.palette.primary.main,
                 display: "flex",
-                flexDirection:"column",
                 justifyContent: "center",
                 alignItems: "center",
-                py: 23,
-                px: 13,
-                
-                })}>
-                    <Typography sx={(t) => ({
-                        color: t.palette.primary.main,
-                        fontSize: "18px",
-                        fontWeight: "700",
+                py: 6,
+                px: 4,
+                // position:"absolute",
+            })}>
+                <Grid
+                    item
+                    xs={12}
+                    sx={(t) => ({
+                    backgroundColor: t.palette.primary.light,
+                    borderRadius: "13px",
+                    display: "flex",
+                    flexDirection:"column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    py: 23,
+                    px: 13,
+                    
                     })}>
-                        HOME
-                </Typography>
+                        <Typography sx={(t) => ({
+                            color: t.palette.primary.main,
+                            fontSize: "18px",
+                            fontWeight: "700",
+                        })}>
+                            HOME
+                    </Typography>
+                </Grid>
             </Grid>
-        </Grid>
-        <Footer />  
+            <Footer />  
         </Grid>
     )
 }

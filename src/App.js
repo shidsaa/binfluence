@@ -13,20 +13,20 @@ import Header from './components/Header';
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/Loading" element={<Loading />} />
-    //     <Route path="/MyBins" element={<MyBins />} />
-    //     <Route path="/Recycling" element={<Recycling />} />
-    //     <Route path="/Scan" element={<Scan />} />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Loading" element={<Loading />} />
+        <Route path="/MyBins" element={<MyBins />} />
+        <Route path="/Recycling" element={<Recycling />} />
+        <Route path="/Scan" element={<Scan />} />
        
-    //     {/* <Route path="/Footer" element={<Footer />} /> */}
-    //   </Routes>
-    // </Router>
-    <div>
-       <Header />
-    </div>
+        {/* <Route path="/Footer" element={<Footer />} /> */}
+      </Routes>
+    </Router>
+    // <div>
+    //    <Header />
+    // </div>
   );
 }
 
