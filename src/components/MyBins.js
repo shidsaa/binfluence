@@ -3,7 +3,7 @@ import { Grid, Typography } from "@mui/material";
 
 
 
-function Home() {
+function MyBins() {
     return (
          <Grid
             container 
@@ -34,11 +34,11 @@ function Home() {
                     fontSize: "18px",
                     fontWeight: "700",
                 })}>
-                    HOME
+                    MY BINS
                 </Typography>
             </Grid>
        </Grid>
     )
 }
 
-export default Home;
+export default MyBins;

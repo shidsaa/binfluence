@@ -3,7 +3,7 @@ import { Grid, Typography } from "@mui/material";
 
 
 
-function Home() {
+function Recycling() {
     return (
          <Grid
             container 
@@ -34,11 +34,11 @@ function Home() {
                     fontSize: "18px",
                     fontWeight: "700",
                 })}>
-                    HOME
+                    RECYCLING
                 </Typography>
             </Grid>
        </Grid>
     )
 }
 
-export default Home;
+export default Recycling;

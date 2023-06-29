@@ -33,7 +33,7 @@ function Home() {
                     <BottomNavigationAction label="My Bins" icon={<DeleteIcon />}  />
                     <BottomNavigationAction label="Recycling A to Z" icon={<RecyclingIcon />} />
                     <BottomNavigationAction label="Scan QR" icon={<CameraAltIcon />} />
-                    <BottomNavigationAction label="Other" icon={<MoreHorizIcon />} />
+                    <BottomNavigationAction  disabled  label="Other" icon={<MoreHorizIcon />} />
                 </BottomNavigation>
             </Paper>
         </Grid>
