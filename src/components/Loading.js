@@ -9,9 +9,9 @@ import Snackbar from '@mui/material/Snackbar';
 
 
 function Loading() {
-    const [progress, setProgress] = React.useState(0);
+    const [progress, setProgress] = useState(0);
 
-    React.useEffect(() => {
+    useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
         if (oldProgress === 100) {
