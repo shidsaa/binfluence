@@ -1,12 +1,12 @@
 import './App.css';
-import LoadingP from './components/LoadingP';
+import Loading from './components/Loading';
 // import Loading from './components/Loading';
 
 
 function App() {
   return (
     <div >
-      <LoadingP />
+      <Loading />
       {/* <Loading /> */}
     </div>
   );
