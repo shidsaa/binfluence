@@ -1,11 +1,21 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-
+import Footer from "./Footer";
 
 
 function Home() {
     return (
-         <Grid
+        <Grid
+            xs={12}
+            container 
+            sx={(t) => ({
+            backgroundColor: t.palette.primary.main,
+            display: "flex",
+            position:"absolute",
+        })}
+        >
+        <Grid
+            xs={12}
             container 
             sx={(t) => ({
             backgroundColor: t.palette.primary.main,
@@ -13,7 +23,8 @@ function Home() {
             justifyContent: "center",
             alignItems: "center",
             py: 6,
-            px:4
+            px: 4,
+            // position:"absolute",
         })}>
             <Grid
                 item
@@ -29,15 +40,17 @@ function Home() {
                 px: 13,
                 
                 })}>
-                <Typography sx={(t) => ({
-                    color: t.palette.primary.main,
-                    fontSize: "18px",
-                    fontWeight: "700",
-                })}>
-                    HOME
+                    <Typography sx={(t) => ({
+                        color: t.palette.primary.main,
+                        fontSize: "18px",
+                        fontWeight: "700",
+                    })}>
+                        HOME
                 </Typography>
             </Grid>
-       </Grid>
+        </Grid>
+        <Footer />  
+        </Grid>
     )
 }
 

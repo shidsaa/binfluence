@@ -19,7 +19,7 @@ function App() {
         <Route path="/MyBins" element={<MyBins />} />
         <Route path="/Recycling" element={<Recycling />} />
         <Route path="/Scan" element={<Scan />} />
-        <Route path="/Footer" element={<Footer />} />
+        {/* <Route path="/Footer" element={<Footer />} /> */}
       </Routes>
     </Router>
   );
