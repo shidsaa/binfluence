@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
@@ -11,16 +12,27 @@ import Scan from './components/Scan';
 
 function App() {
   return (
-    <div >
-      <Scan />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Loading" element={<Loading />} />
+        <Route path="/MyBins" element={<MyBins />} />
+        <Route path="/Recycling" element={<Recycling />} />
+        <Route path="/Scan" element={<Scan />} />
+        <Route path="/Footer" element={<Footer />} />
+      </Routes>
+    </Router>
+  );
+}
+
+      // <div >
+      {/* <Scan /> */}
       {/* <Recycling /> */}
       {/* <MyBins /> */}
       {/* <Home /> */}
       {/* <Footer /> */}
       {/* <Loading /> */}
       {/* <Loading /> */}
-    </div>
-  );
-}
+    // </div>
 
 export default App;
