@@ -9,7 +9,8 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#80c12d",
-      light : "#e2f1d0"
+      light: "#e2f1d0",
+      dark :  "#355210"
     },
   },
   breakpoints: {

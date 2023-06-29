@@ -6,22 +6,27 @@ import Loading from './components/Loading';
 import MyBins from './components/MyBins';
 import Recycling from './components/Recycling';
 import Scan from './components/Scan';
+import Header from './components/Header';
 
 // import Loading from './components/Loading';
 
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Loading" element={<Loading />} />
-        <Route path="/MyBins" element={<MyBins />} />
-        <Route path="/Recycling" element={<Recycling />} />
-        <Route path="/Scan" element={<Scan />} />
-        {/* <Route path="/Footer" element={<Footer />} /> */}
-      </Routes>
-    </Router>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+    //     <Route path="/Loading" element={<Loading />} />
+    //     <Route path="/MyBins" element={<MyBins />} />
+    //     <Route path="/Recycling" element={<Recycling />} />
+    //     <Route path="/Scan" element={<Scan />} />
+       
+    //     {/* <Route path="/Footer" element={<Footer />} /> */}
+    //   </Routes>
+    // </Router>
+    <div>
+       <Header />
+    </div>
   );
 }
 

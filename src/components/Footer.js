@@ -19,12 +19,13 @@ function Home() {
             xs={12}
             sx={(t) => ({
             backgroundColor: t.palette.primary.light,
-            position: 'fixed',
             bottom: 0,
             left: 0,
             right: 0,
             position:"relative"
-        })} elevation={3}>
+            })}
+            elevation={3}
+        >
                 <nav>
                     <BottomNavigation
                     showLabels
