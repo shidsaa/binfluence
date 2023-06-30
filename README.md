@@ -1,3 +1,3 @@
 # binfluence
 
-hi
+This is a prototype of Binfluence project
