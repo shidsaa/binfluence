@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import Footer from "./Footer";
 import Header from "./Header";
 
 
@@ -25,8 +24,7 @@ function Home() {
                 justifyContent: "center",
                 alignItems: "center",
                 py: 6,
-                px: 4,
-                // position:"absolute",
+                px: 4
             })}>
                 <Grid
                     item
@@ -50,8 +48,7 @@ function Home() {
                             HOME
                     </Typography>
                 </Grid>
-            </Grid>
-            <Footer />  
+            </Grid> 
         </Grid>
     )
 }
