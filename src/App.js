@@ -18,7 +18,7 @@ function App() {
         <Route path="/Scan" element={<Scan />} />
       </Routes>
     </Router>
-    //fix header
+    //fix header there
   );
 }
 
