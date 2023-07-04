@@ -11,17 +11,50 @@ import Scan from "./components/Scan";
 function App() {
   return (
     <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/Loading" element={<Loading />} />
-        <Route path="/MyBins" element={<MyBins />} />
-        <Route path="/Recycling" element={<Recycling />} />
-        <Route path="/Scan" element={<Scan />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Home />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/MyBins"
+          element={
+            <>
+              <Header />
+              <MyBins />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Recycling"
+          element={
+            <>
+              <Header />
+              <Recycling />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Scan"
+          element={
+            <>
+              <Header />
+              <Scan />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
-      <Footer />
     </Router>
-    //fix header there
   );
 }
 

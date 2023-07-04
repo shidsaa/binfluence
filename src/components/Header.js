@@ -6,9 +6,12 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import QrCode2Icon from "@mui/icons-material/QrCode2";
-import { Grid } from "@mui/material";
+import { Grid, useTheme } from "@mui/material";
 
 function Header() {
+  //  const theme = useTheme();
+  //   const { breakpoints } = theme;
+
   return (
     <Grid
       xs={12}
@@ -24,28 +27,39 @@ function Header() {
           position="static"
           sx={{
             gap: 3,
-            justifyContent: "center",
+            justifyContent: " space-between",
             alignItems: "center",
           }}>
-          <IconButton sx={{ color: "white" }}>
-            <ArrowBackIcon />
-          </IconButton>
-          <IconButton sx={(t) => ({ color: t.palette.primary.dark })}>
-            <QrCode2Icon />
-          </IconButton>
-          <IconButton sx={(t) => ({ color: t.palette.primary.dark })}>
-            <Typography variant="h5" component="div" sx={{ fontWeight: "600" }}>
-              Binfluence
-            </Typography>
-          </IconButton>
-          <IconButton
-            disabled
-            size="large"
-            edge="start"
-            aria-label="menu"
-            sx={{ color: "white" }}>
-            <MenuIcon />
-          </IconButton>
+          <grid>
+            <IconButton sx={{ color: "white" }}>
+              <ArrowBackIcon />
+            </IconButton>
+          </grid>
+
+          <grid>
+            <IconButton sx={(t) => ({ color: t.palette.primary.dark })}>
+              <QrCode2Icon />
+            </IconButton>
+            <IconButton sx={(t) => ({ color: t.palette.primary.dark })}>
+              <Typography
+                variant="h5"
+                component="div"
+                sx={{ fontWeight: "600" }}>
+                Binfluence
+              </Typography>
+            </IconButton>
+          </grid>
+
+          <grid>
+            <IconButton
+              disabled
+              size="large"
+              edge="start"
+              aria-label="menu"
+              sx={{ color: "white" }}>
+              <MenuIcon />
+            </IconButton>
+          </grid>
         </Toolbar>
       </AppBar>
     </Grid>
